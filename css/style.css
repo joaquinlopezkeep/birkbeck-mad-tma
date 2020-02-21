@@ -1,0 +1,22 @@
+
+.secondary-heading{
+    text-align: center;
+}
+
+.copyright{
+    text-align: center;
+}
+
+#featured{
+    max-width:340px; 
+    padding-bottom:2em;
+}
+
+h1, h2, h3{
+    font-family: 'Knewave', cursive;
+}
+
+h4, p, a{
+    font-family: 'Oswald', sans-serif;
+}
+

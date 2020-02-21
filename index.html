@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>ZeDorms</title>
+		<link
+			rel="stylesheet"
+			href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<script src="scripts/javascript.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Knewave|Oswald&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!--MAIN PAGE-->
+		<div data-role="page" id="main">
+			<!--Header-->
+			<div
+				data-role="header"
+				data-theme="b"
+				data-id="head"
+				data-position="fixed"
+			>
+				<h1>ZeDorms</h1>
+			</div>
+			<!--Main Content-->
+			<div role="main" class="ui-content" data-role="content">
+				<!--Main ListView-->
+				<ul data-role="listview" data-inset="true" data-theme="b">
+					<li>
+						<a href="#houses" data-transition="slidefade">
+							<img src="images/house.png" alt="Houses" class="ui-li-thumb" />
+							<h2>Houses</h2>
+						</a>
+					</li>
+
+					<li>
+						<a href="#flats" data-transition="slidefade">
+							<img src="images/flats.png" alt="Houses" class="ui-li-thumb" />
+							<h2>Flats</h2>
+						</a>
+					</li>
+
+					<li>
+						<a href="#studio" data-transition="slidefade">
+							<img src="images/studio.png" alt="Houses" class="ui-li-thumb" />
+							<h2>Studio Flats</h2>
+						</a>
+					</li>
+
+					<li>
+						<a href="#shared" data-transition="slidefade">
+							<img src="images/shared.png" alt="Houses" class="ui-li-thumb" />
+							<h2>Shared Housing</h2>
+						</a>
+					</li>
+				</ul>
+				<!--Featured Property-->
+				<h2 class="secondary-heading">Featured Property</h2>
+				<ul
+					data-role="listview"
+					data-split-icon="info"
+					data-theme="b"
+					data-inset="true"
+				>
+					<li>
+						<a
+							href="nelson_mandela.html"
+							data-transition="slidefade"
+							data-prefetch
+						>
+							<img src="images/house_1.png" alt="Houses" class="ui-li-thumb" />
+							<h2>17 Nelson Mandela Close</h2>
+							<p>£2700pcm</p>
+						</a>
+						<a
+							href="#featured"
+							data-rel="popup"
+							data-position-to="window"
+							data-transition="pop"
+							>View Information</a
+						>
+					</li>
+				</ul>
+
+				<!--popup-->
+				<div
+					data-role="popup"
+					id="featured"
+					data-theme="a"
+					data-overlay-theme="b"
+					class="ui-content"
+				>
+					<h3>17 Nelson Mandela Close</h3>
+					<img src="images/house_1.png" alt="Houses" />
+					<p>
+						4 Bedroom
+					</p>
+					<p>
+						3 Bathroom
+					</p>
+					<p>
+						Private Parking
+					</p>
+					<p>
+						1 Mile from Campus.
+					</p>
+					<a
+						href="index.html"
+						data-rel="back"
+						class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-icon-check ui-btn-icon-left ui-btn-inline ui-mini"
+						>Book an Appointment</a
+					>
+					<a
+						href="index.html"
+						data-rel="back"
+						class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini"
+						>Cancel</a
+					>
+				</div>
+			</div>
+			<!--Footer-->
+			<div
+				data-role="footer"
+				data-id="footernav"
+				data-theme="b"
+				data-position="fixed"
+			>
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a
+								href="about.html"
+								class="ui-btn ui-btn-icon-top ui-icon-info"
+								data-prefetch
+								data-transition="slideup"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								href="contact.html"
+								class="ui-btn ui-btn-icon-top ui-icon-phone"
+								data-prefetch
+								data-transition="slideup"
+								>Contact</a
+							>
+						</li>
+						<li>
+							<a
+								href="user.html"
+								class="ui-btn ui-btn-icon-top ui-icon-user"
+								data-prefetch
+								data-transition="slideup"
+								>User</a
+							>
+						</li>
+					</ul>
+					<p class="copyright">ZeDorms &copy; 2020</p>
+				</div>
+			</div>
+		</div>
+
+		<!--HOUSES-->
+		<div data-role="page" id="houses">
+			<!--Header-->
+			<div
+				data-role="header"
+				data-theme="b"
+				data-id="head"
+				data-position="fixed"
+			>
+				<!--BACK BUTTON-->
+				<a
+					href="#main"
+					data-rel="back"
+					data-direction="reverse"
+					data-transition="slidefade"
+					class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"
+					>Back</a
+				>
+				<h1>ZeDorms</h1>
+				<!--PANEL BUTTON-->
+				<a
+					href="#mypanel"
+					data-icon="bars"
+					class="ui-shadow ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"
+					>Panel</a
+				>
+			</div>
+			<!--Main Content-->
+			<div role="main" data-role="content" class="ui-content">
+				<h2>Houses</h2>
+				<h4>A Home away from home</h4>
+				<div data-role="collapsibleset" data-theme="a" data-content-theme="b">
+					<div data-role="collapsible">
+						<h2>£2500pcm+</h2>
+						<ul data-role="listview">
+							<li>
+								<a href="nelson_mandela.html" data-prefetch>
+									<img
+										src="images/house_1.png"
+										alt="Houses"
+										class="ui-li-thumb"
+									/>
+									<h2>17 Nelson Mandela Close</h2>
+									<p>£2700pcm</p>
+									<p>1 mile from Campus</p>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="images/house_2.png"
+										alt="Houses"
+										class="ui-li-thumb"
+									/>
+									<h2>11 Hermitage Road</h2>
+									<p>£2500pcm</p>
+									<p>3 mile from Campus</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2>£1500pcm - £2499pcm</h2>
+						<ul data-role="listview">
+							<li>
+								<a href="#">
+									<img
+										src="images/house_3.png"
+										alt="Houses"
+										class="ui-li-thumb"
+									/>
+									<h2>44 Vale Grove</h2>
+									<p>£2200pcm</p>
+									<p>5 miles from Campus</p>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="images/house_4.png"
+										alt="Houses"
+										class="ui-li-thumb"
+									/>
+									<h2>3 Surrey Gardens</h2>
+									<p>£2000pcm</p>
+									<p>2 mile from Campus</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2>£500pcm - £1499pcm</h2>
+						<ul data-role="listview">
+							<li>
+								<a href="#">
+									<img
+										src="images/house_5.png"
+										alt="Houses"
+										class="ui-li-thumb"
+									/>
+									<h2>4 Woodberry Grove</h2>
+									<p>£1300pcm</p>
+									<p>7 miles from Campus</p>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="images/house_6.png"
+										alt="Houses"
+										class="ui-li-thumb"
+									/>
+									<h2>30 Springbank Drive</h2>
+									<p>£900pcm</p>
+									<p>11 mile from Campus</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--Footer-->
+			<div
+				data-role="footer"
+				data-id="footernav"
+				data-theme="b"
+				data-position="fixed"
+			>
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a
+								href="about.html"
+								class="ui-btn ui-btn-icon-top ui-icon-info"
+								data-prefetch
+								data-transition="slideup"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								href="contact.html"
+								class="ui-btn ui-btn-icon-top ui-icon-phone"
+								data-prefetch
+								data-transition="slideup"
+								>Contact</a
+							>
+						</li>
+						<li>
+							<a
+								href="user.html"
+								class="ui-btn ui-btn-icon-top ui-icon-user"
+								data-prefetch
+								data-transition="slideup"
+								>User</a
+							>
+						</li>
+					</ul>
+					<p class="copyright">ZeDorms &copy; 2020</p>
+				</div>
+			</div>
+		</div>
+
+		<!--FLATS-->
+		<div data-role="page" id="flats">
+			<!--Header-->
+			<div
+				data-role="header"
+				data-theme="b"
+				data-id="head"
+				data-position="fixed"
+			>
+				<!--BACK BUTTON-->
+				<a
+					href="#main"
+					data-rel="back"
+					data-transition="slidefade"
+					data-direction="reverse"
+					class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"
+					>Back</a
+				>
+				<h1>ZeDorms</h1>
+				<!--PANEL BUTTON-->
+				<a
+					href="#mypanel"
+					data-icon="bars"
+					class="ui-shadow ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"
+					>Panel</a
+				>
+			</div>
+			<!--MAIN CONTENT-->
+			<div role="main" data-role="content" class="ui-content">
+				<h2>Flats</h2>
+				<h4>Prefect for sharing or independent living</h4>
+				<div data-role="collapsibleset" data-theme="a" data-content-theme="b">
+					<div data-role="collapsible">
+						<h2>£2500pcm+</h2>
+						<ul data-role="listview">
+							<li>
+								<a href="park-lane.html">
+									<img
+										src="images/flats_1.png"
+										alt="Flats"
+										class="ui-li-thumb"
+									/>
+									<h2>66 Park Lane</h2>
+									<p>£2500pcm</p>
+									<p>1 mile form Campus</p>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="images/flats_2.png"
+										alt="Flats"
+										class="ui-li-thumb"
+									/>
+									<h2>3 Drury Lane</h2>
+									<p>£2500</p>
+									<p>3 mile from Campus</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2>£1500pcm - £2499pcm</h2>
+						<ul data-role="listview">
+							<li>
+								<a href="#">
+									<img
+										src="images/flats_3.png"
+										alt="Flats"
+										class="ui-li-thumb"
+									/>
+									<h2>8 Mile Road</h2>
+									<p>£2100pcm</p>
+									<p>3 miles from Campus</p>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="images/flats_4.png"
+										alt="Flats"
+										class="ui-li-thumb"
+									/>
+									<h2>90 Southampton Street</h2>
+									<p>£1800pcm</p>
+									<p>4 mile from Campus</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2>£500pcm - £1499pcm</h2>
+						<ul data-role="listview">
+							<li>
+								<a href="#">
+									<img
+										src="images/flats_5.png"
+										alt="Flats"
+										class="ui-li-thumb"
+									/>
+									<h2>89 Old street</h2>
+									<p>£1300pcm</p>
+									<p>5 Miles from Campus</p>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="images/flats_6.png"
+										alt="Flats"
+										class="ui-li-thumb"
+									/>
+									<h2>1 Monmoth street</h2>
+									<p>£1200pcm</p>
+									<p>7 mile from Campus</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--FOOTER-->
+			<div
+				data-role="footer"
+				data-id="footernav"
+				data-theme="b"
+				data-position="fixed"
+			>
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a
+								href="about.html"
+								class="ui-btn ui-btn-icon-top ui-icon-info"
+								data-prefetch
+								data-transition="slideup"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								href="contact.html"
+								class="ui-btn ui-btn-icon-top ui-icon-phone"
+								data-prefetch
+								data-transition="slideup"
+								>Contact</a
+							>
+						</li>
+						<li>
+							<a
+								href="user.html"
+								class="ui-btn ui-btn-icon-top ui-icon-user"
+								data-prefetch
+								data-transition="slideup"
+								>User</a
+							>
+						</li>
+					</ul>
+					<p class="copyright">ZeDorms &copy; 2020</p>
+				</div>
+			</div>
+		</div>
+
+		<!--STUDIO-->
+		<div data-role="page" id="studio">
+			<!--Header-->
+			<div
+				data-role="header"
+				data-theme="b"
+				data-id="head"
+				data-position="fixed"
+			>
+				<!--BACK BUTTON-->
+				<a
+					href="#main"
+					data-rel="back"
+					data-transition="slidefade"
+					data-direction="reverse"
+					class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"
+					>Back</a
+				>
+				<h1>ZeDorms</h1>
+				<!--PANEL BUTTON-->
+				<a
+					href="#mypanel"
+					data-icon="bars"
+					class="ui-shadow ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"
+					>Panel</a
+				>
+			</div>
+			<!--MAIN CONTENT-->
+			<div role="main" data-role="content" class="ui-content">
+				<h2>Studio Flats</h2>
+				<h4>The prefect accommodation for independent minded students</h4>
+				<div data-role="collapsibleset" data-theme="a" data-content-theme="b">
+					<div data-role="collapsible">
+						<h2>£1500pcm+</h2>
+						<ul data-role="listview">
+							<li>
+								<a href="#">
+									<img
+										src="images/studio_1.png"
+										alt="Studio"
+										class="ui-li-thumb"
+									/>
+									<h2>17 Conway Road</h2>
+									<p>£1700pcm</p>
+									<p>1 mile from Campus</p>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="images/studio_2.png"
+										alt="Studio"
+										class="ui-li-thumb"
+									/>
+									<h2>19 Windsor Lane</h2>
+									<p>£1500pcm</p>
+									<p>2 mile from Campus</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2>£1000pcm - £1499pcm</h2>
+						<ul data-role="listview">
+							<li>
+								<a href="#">
+									<img
+										src="images/studio_3.png"
+										alt="Studio"
+										class="ui-li-thumb"
+									/>
+									<h2>19 Emeralde Street</h2>
+									<p>£1100pcm</p>
+									<p>4 mile from Campus</p>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="images/studio_4.png"
+										alt="Studio"
+										class="ui-li-thumb"
+									/>
+									<h2>19 Ruby Lane</h2>
+									<p>£1000pcm</p>
+									<p>5 mile from Campus</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2>£500pcm - £999pcm</h2>
+						<ul data-role="listview">
+							<li>
+								<a href="#">
+									<img
+										src="images/studio_5.png"
+										alt="Studio"
+										class="ui-li-thumb"
+									/>
+									<h2>19 Poverty Lane</h2>
+									<p>£500pcm</p>
+									<p>2 mile from Campus</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--FOOTER-->
+			<div
+				data-role="footer"
+				data-id="footernav"
+				data-theme="b"
+				data-position="fixed"
+			>
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a
+								href="about.html"
+								class="ui-btn ui-btn-icon-top ui-icon-info"
+								data-prefetch
+								data-transition="slideup"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								href="contact.html"
+								class="ui-btn ui-btn-icon-top ui-icon-phone"
+								data-prefetch
+								data-transition="slideup"
+								>Contact</a
+							>
+						</li>
+						<li>
+							<a
+								href="user.html"
+								class="ui-btn ui-btn-icon-top ui-icon-user"
+								data-prefetch
+								data-transition="slideup"
+								>User</a
+							>
+						</li>
+					</ul>
+					<p class="copyright">ZeDorms &copy; 2020</p>
+				</div>
+			</div>
+		</div>
+
+		<!--SHARED-->
+		<div data-role="page" id="shared">
+			<!--Header-->
+			<div
+				data-role="header"
+				data-theme="b"
+				data-id="head"
+				data-position="fixed"
+			>
+				<!--BACK BUTTON-->
+				<a
+					href="#main"
+					data-rel="back"
+					data-transition="slidefade"
+					data-direction="reverse"
+					class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"
+					>Back</a
+				>
+				<h1>ZeDorms</h1>
+				<!--PANEL BUTTON-->
+				<a
+					href="#mypanel"
+					data-icon="bars"
+					class="ui-shadow ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"
+					>Panel</a
+				>
+			</div>
+			<!--MAIN CONTENT-->
+			<div role="main" data-role="content" class="ui-content">
+				<div data-role="collapsibleset" data-theme="a" data-content-theme="b">
+					<h2>Shared accommodation</h2>
+					<h4>For the ultimate university experience</h4>
+					<div data-role="collapsible">
+						<h2>£500pcm+</h2>
+						<ul data-role="listview">
+							<li>
+								<a href="#">
+									<img
+										src="images/shared_1.png"
+										alt="shared"
+										class="ui-li-thumb"
+									/>
+									<h2>172 Diamond Lane</h2>
+									<p>£700pcm</p>
+									<p>1 mile from Campus</p>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="images/shared_2.png"
+										alt="shared"
+										class="ui-li-thumb"
+									/>
+									<h2>199 Opal Lane</h2>
+									<p>£600pcm</p>
+									<p>2 mile from Campus</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2>£300pcm - £499pcm</h2>
+						<ul data-role="listview">
+							<li>
+								<a href="#">
+									<img
+										src="images/shared_3.png"
+										alt="shared"
+										class="ui-li-thumb"
+									/>
+									<h2>128 Castle Road</h2>
+									<p>£400pcm</p>
+									<p>4 mile from Campus</p>
+								</a>
+							</li>
+							<li>
+								<a href="#"
+									><img
+										src="images/shared_4.png"
+										alt="shared"
+										class="ui-li-thumb"
+									/>
+									<h2>1 Safron Lane</h2>
+									<p>£350pcm</p>
+									<p>6 mile from Campus</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div data-role="collapsible">
+						<h2>£100pcm - £299pcm</h2>
+						<ul data-role="listview">
+							<li>
+								<a href="#">
+									<img
+										src="images/shared_5.png"
+										alt="shared"
+										class="ui-li-thumb"
+									/>
+									<h2>1 Lorem Lane</h2>
+									<p>£150pcm</p>
+									<p>10 mile from Campus</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--FOOTER-->
+			<div
+				data-role="footer"
+				data-id="footernav"
+				data-theme="b"
+				data-position="fixed"
+			>
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a
+								href="about.html"
+								class="ui-btn ui-btn-icon-top ui-icon-info"
+								data-prefetch
+								data-transition="slideup"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								href="contact.html"
+								class="ui-btn ui-btn-icon-top ui-icon-phone"
+								data-prefetch
+								data-transition="slideup"
+								>Contact</a
+							>
+						</li>
+						<li>
+							<a
+								href="user.html"
+								class="ui-btn ui-btn-icon-top ui-icon-user"
+								data-prefetch
+								data-transition="slideup"
+								>User</a
+							>
+						</li>
+					</ul>
+					<p class="copyright">ZeDorms &copy; 2020</p>
+				</div>
+			</div>
+		</div>
+
+		<!--PANEL-->
+		<div
+			data-role="panel"
+			id="mypanel"
+			data-position="right"
+			data-display="overlay"
+			data-theme="b"
+		>
+			<ul>
+				<li>
+					<a
+						href="#main"
+						data-transition="pop"
+						class="ui-btn ui-btn-icon-left ui-icon-home"
+						>Home</a
+					>
+				</li>
+				<li><a href="#houses" data-transition="pop">House</a></li>
+				<li><a href="#flats" data-transition="pop">Flats</a></li>
+				<li><a href="#studio" data-transition="pop">Studio Flats</a></li>
+				<li><a href="#shared" data-transition="pop">Shared</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

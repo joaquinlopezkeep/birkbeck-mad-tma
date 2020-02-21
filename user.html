@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>ZeDorms|Account</title>
+		<link
+			rel="stylesheet"
+			href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css?family=Knewave|Oswald&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div data-role="page" id="user">
+			<!--HEADER-->
+			<div
+				data-role="header"
+				data-theme="b"
+				data-id="head"
+				data-position="fixed"
+			>
+				<!--BACK BUTTON-->
+				<a
+					href="#main"
+					data-rel="back"
+					data-direction="reverse"
+					class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-back"
+					>Back</a
+				>
+				<h1>ZeDorms</h1>
+				<!--PANEL BUTTON-->
+				<a
+					href="#mypanel"
+					data-icon="bars"
+					class="ui-shadow ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"
+					>Panel</a
+				>
+			</div>
+			<!--MAIN-->
+			<div role="main" data-role="content" class="ui-content">
+				<ul data-role="listview" data-inset="true" data-theme="b">
+					<li data-role="list-divider">User Settings</li>
+					<li data-icon="user"><a href="#">User name: user</a></li>
+					<li data-icon="eye"><a href="#">Password: ***********</a></li>
+					<li data-icon="mail">
+						<a href="#">Email: user@mail.zedland.ac.co.uk</a>
+					</li>
+				</ul>
+
+				<h2>Messages</h2>
+				<ul data-role="listview" data-inset="true" data-theme="b">
+					<li data-role="list-divider">
+						Thursday, February 20, 2020 <span class="ui-li-count">2</span>
+					</li>
+					<li>
+						<a href="#">
+							<h2>17 Nelson Mandela Close</h2>
+							<p>
+								Hi User,
+							</p>
+							<p>
+								Please confirm your appointment for the 2nd of March at 13:30
+							</p>
+							<p>
+								Regards
+							</p>
+							<p>Admin</p>
+							<p class="ui-li-aside">13:19</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<h2>66 Park Lane</h2>
+							<p>
+								Hi User,
+							</p>
+							<p>
+								Please confirm your appointment for the 1st of March at 12:30
+							</p>
+							<p>
+								Regards
+							</p>
+							<p>Admin</p>
+							<p class="ui-li-aside">14:19</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--Footer-->
+			<div
+				data-role="footer"
+				data-id="footernav"
+				data-theme="b"
+				data-position="fixed"
+			>
+				<div data-role="navbar">
+					<ul>
+						<li>
+							<a
+								href="about.html"
+								class="ui-btn ui-btn-icon-top ui-icon-info"
+								data-prefetch
+								data-transition="slideup"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								href="contact.html"
+								class="ui-btn ui-btn-icon-top ui-icon-phone"
+								data-prefetch
+								data-transition="slideup"
+								>Contact</a
+							>
+						</li>
+						<li>
+							<a
+								href="user.html"
+								class="ui-btn ui-btn-icon-top ui-icon-user ui-btn-active"
+								data-prefetch
+								data-transition="slideup"
+								>User</a
+							>
+						</li>
+					</ul>
+					<p class="copyright">ZeDorms &copy; 2020</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
